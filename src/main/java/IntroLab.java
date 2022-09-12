@@ -41,6 +41,10 @@ public class IntroLab {
      * Make sure you document your method properly!
      */
 
+    public static String bulatyul(int age) {
+        return printLabMessage("Hello", "Julia", true, "I am " + age + " years old.");
+    }
+
     /**
      * An example method that calls on printLabMessage.
      */
@@ -59,6 +63,9 @@ public class IntroLab {
          * As a reference, we've provided a sample call to exampleStudent
          * above. Afterwards: run this file to see the output!
          */
+
+        String message = bulatyul(19);
+        System.out.println(message);
 
 
     }
