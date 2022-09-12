@@ -9,8 +9,7 @@ public class IntroLab {
 
     /**
      * Returns a message depending on the given greeting, name, message, and
-     * whether the caller likes cats or dogs more.
-     *
+     * whether the caller likes cats or dogs more
      * Do NOT change this method!
      *
      * @param greeting   A string with a greeting (e.g. "Hello", "Hey")
@@ -42,6 +41,32 @@ public class IntroLab {
      */
 
     /**
+     * A method that concatenates text for age to the labMessage
+     * @param age   A string that denotes age
+     * @return A message that adds age sentence to the printlabmessage.
+     */
+    public static String nasiraye(int age) {
+        String age_text = "I am " + age + " years old.";
+        String greeting;
+        String name;
+        String message;
+        Boolean likes_cats;
+        if (age > 25) {
+            greeting = "Greetings youngling";
+            name = "oldling";
+            likes_cats = false;
+            message = "Use your time wisely. I didn't. ";
+        } else {
+            greeting = "Yo whatsup";
+            name = "amazing";
+            likes_cats = true;
+            message = "Apples are cool. ";
+        }
+        return printLabMessage(greeting, name, likes_cats, message) + age_text;
+    }
+
+
+    /**
      * An example method that calls on printLabMessage.
      */
     public static String exampleStudent() {
@@ -59,7 +84,8 @@ public class IntroLab {
          * As a reference, we've provided a sample call to exampleStudent
          * above. Afterwards: run this file to see the output!
          */
-
+        System.out.println(nasiraye(18));
+        System.out.println(nasiraye(30));
 
     }
 
