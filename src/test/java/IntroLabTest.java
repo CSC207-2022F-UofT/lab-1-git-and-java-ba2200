@@ -30,4 +30,10 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+
+    public void testbulatyul() {
+        String expected = "Hello! My name is Julia! " + "I like cats more than dogs! I am 19 years old";
+        String actual = IntroLab.bulatyul(19);
+        assertEquals(expected, actual);
+    }
 }
